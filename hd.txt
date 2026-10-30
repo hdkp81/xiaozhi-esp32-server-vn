@@ -1,0 +1,16 @@
+chạy lần đầu
+
+
+docker-compose pull xiaozhi-esp32-server-web
+docker-compose up -d --force-recreate xiaozhi-esp32-server-web
+
+docker compose down
+docker compose up -d
+
+SAU KHI SỬA FILE
+docker compose build --no-cache && docker compose up -d
+
+hoặc về main\manager-web
+npm run build
+docker compose restart
+
